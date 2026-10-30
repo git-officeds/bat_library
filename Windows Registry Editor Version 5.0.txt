@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+; --- ファイルを右クリックしたとき ---
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Antigravity]
+@="Antigravity IDE で開く"
+"Icon"="%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Antigravity\command]
+@="\"%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe\" \"%1\""
+
+; --- フォルダを右クリックしたとき ---
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Antigravity]
+@="Antigravity IDE で開く"
+"Icon"="%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Antigravity\command]
+@="\"%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe\" \"%V\""
+
+; --- フォルダ内の空白部分を右クリックしたとき ---
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Antigravity]
+@="Antigravity IDE で開く"
+"Icon"="%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Antigravity\command]
+@="\"%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe\" \"%V\""
